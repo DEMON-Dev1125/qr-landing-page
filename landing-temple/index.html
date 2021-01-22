@@ -18,12 +18,18 @@
       background-image: url(./bg.jpg);
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: right;
+      background-position-x: 83%;
+      position: relative;
       width: 100%;
       height: 100vh;
     }
     .search {
       border: solid 1px #fff;
       border-radius: 20px;
+    }
+    .search:focus {
+      outline-style: none;
     }
     .navbar {
       top: 10px;
@@ -59,6 +65,10 @@
       border-radius: 10px;
       padding: 10px 15px;
       color: #fff;
+      outline-style: none;
+    }
+    .btn__style:focus {
+      outline-style: none;
     }
     .qr__style {
       color: white;
@@ -74,67 +84,170 @@
         margin-left: 15px;
       }
     }
+    @media screen and (max-width: 992px) {
+      .search {
+        display: none;
+      }
+    }
     @media screen and (max-width: 769px) {
       .text-content {
         position: absolute;
         bottom: 20px;
       }
     }
+    @media screen and (max-width: 500px) {
+      .btn__style {
+        background: linear-gradient(to right, #5479b0 0%, #03cbc1 100%);
+        font-size: 15px;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        padding: 10px 15px;
+        color: #fff;
+      }
+      .btn__style:focus {
+        outline-style: none;
+      }
+    }
+    .navbar-toggler {
+      width: 50px;
+      height: 35px;
+      background-color: #686868;
+    }
+    .navbar-toggler .line {
+      width: 100%;
+      height: 2px;
+      float: left;
+      background-color: #FFF;
+      margin-bottom: 5px;
+    }
   </style>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <a class="navbar-brand" href="#"></a>
+      <a class="navbar-brand logo" href="#"> </a>
       <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        data-target="#collapsibleNavbar"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <div class="collapse toggle navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#">HOME</a>
+            <a class="nav-link" href="#section1">HOME</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">PROFILE</a>
+            <a class="nav-link" href="#section2">PROFILE</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">GALLERY</a>
+            <a class="nav-link" href="#section3">GALLERY</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">CONTACT</a>
+            <a class="nav-link" href="#section4">CONTACT</a>
           </li>
         </ul>
         <input class="search pl-2" type="search" placeholder=" SEARCH" />
       </div>
     </nav>
-    <div class="container-fluid">
-      <div class="row">
-        <!-- <div class="container"> -->
-        <div class="col-lg-7 col-sm-6"></div>
-        <div class="col-lg-4 col-sm-5">
-          <div class="text__content">
-            <h1 class="text__header">
-              <span class="qr__style">QR</span>
-              CODE
-            </h1>
-            <h3 class="text__body">VERIFICATION</h3>
-            <p class="text__detail">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit amet,
-              consectetuer adipiscing
-            </p>
-            <button class="btn__style">READ MORE</button>
-            <!-- </div> -->
+    <div id="section1" class="container-fluid mb-3">
+      <div class="body__content">
+        <div class="row">
+          <div class="col-lg-7 col-sm-6"></div>
+          <div class="col-lg-4 col-sm-5">
+            <div class="text__content">
+              <h1 class="text__header">
+                <span class="qr__style">QR</span>
+                CODE
+              </h1>
+              <h3 class="text__body">VERIFICATION</h3>
+              <p class="text__detail">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit
+                amet, consectetuer adipiscing
+              </p>
+              <button class="btn__style">READ MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section2" class="container-fluid mb-3">
+      <div class="body__content">
+        <div class="row">
+          <div class="col-lg-7 col-sm-6"></div>
+          <div class="col-lg-4 col-sm-5">
+            <div class="text__content">
+              <h1 class="text__header">
+                <span class="qr__style">QR</span>
+                CODE
+              </h1>
+              <h3 class="text__body">VERIFICATION</h3>
+              <p class="text__detail">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit
+                amet, consectetuer adipiscing
+              </p>
+              <button class="btn__style">READ MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section3" class="container-fluid mb-3">
+      <div class="body__content">
+        <div class="row">
+          <div class="col-lg-7 col-sm-6"></div>
+          <div class="col-lg-4 col-sm-5">
+            <div class="text__content">
+              <h1 class="text__header">
+                <span class="qr__style">QR</span>
+                CODE
+              </h1>
+              <h3 class="text__body">VERIFICATION</h3>
+              <p class="text__detail">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit
+                amet, consectetuer adipiscing
+              </p>
+              <button class="btn__style">READ MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section4" class="container-fluid">
+      <div class="body__content">
+        <div class="row">
+          <div class="col-lg-7 col-sm-6"></div>
+          <div class="col-lg-4 col-sm-5">
+            <div class="text__content">
+              <h1 class="text__header">
+                <span class="qr__style">QR</span>
+                CODE
+              </h1>
+              <h3 class="text__body">VERIFICATION</h3>
+              <p class="text__detail">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut Lorem ipsum dolor sit
+                amet, consectetuer adipiscing
+              </p>
+              <button class="btn__style">READ MORE</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script>
+    $(document).ready(function () {
+      $(".nav-item").click(function () {
+        $(".toggle").addClass("collapsed");
+        $(".toggle").removeClass("show");
+        $(".navbar-toggler").addClass("collapsed");
+      });
+    });
+  </script>
 </html>
