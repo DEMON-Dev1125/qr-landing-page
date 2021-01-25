@@ -74,11 +74,11 @@
         border: 3px solid #44a6a7;
         background-color: #44a6a7;
       }
+      .navbar-nav .nav-item a {
+        color: #a1ddde !important;
+      }
 
       @media screen and (min-width: 992px) {
-        .navbar-nav .nav-item a {
-          color: #a1ddde !important;
-        }
         .navbar-nav .nav-item a:focus {
           color: #edffff !important;
           outline-style: none;
@@ -158,6 +158,18 @@
       .footer__down {
         color: #f9eae5;
         font-size: 14px;
+      }
+      @media screen and (max-width: 488px) {
+        .footer__logo img {
+          width: 200%;
+        }
+        .footer__link {
+          font-size: 12px;
+          padding: 0 !important;
+        }
+        .footer__down {
+          /* font-size: 12px; */
+        }
       }
     </style>
   </head>
