@@ -29,7 +29,7 @@
         width: 100%;
         height: 100vh;
         background-position: right;
-        background-position-x: 88%;
+        background-position-x: 83%;
       }
       .navbar-toggler {
         width: 50px;
@@ -84,6 +84,9 @@
           color: #edffff !important;
           outline-style: none;
         }
+        .body__content {
+          padding-top: 300px;
+        }
       }
       /* @media screen and (max-width: 990px) {
         .body__content {
@@ -91,15 +94,22 @@
         }
       } */
 
+      @media screen and (max-width: 768px) {
+        .body__content {
+          background-position-x: 89%;
+          background-position: right;
+        }
+        .body__content {
+          padding-top: 107%;
+        }
+      }
+
       @media screen and (min-width: 500px) {
         .footer__logo img {
           width: 65%;
         }
         .footer__social {
           text-align: right;
-        }
-        .body__content {
-          padding: 300px 0;
         }
       }
 
@@ -120,11 +130,15 @@
           text-align: center;
         }
         .body__content {
-          padding-top: 505px;
+          padding-top: 150%;
         }
         .text__detail {
           margin: 0 !important;
-          line-height: 22px;
+          line-height: 20px;
+          font-size: 16px;
+        }
+        .btn__style {
+          font-size: 12px;
         }
         .btn__area {
           margin: 5px 0 0 0 !important;
@@ -223,7 +237,7 @@
     <div id="section1" class="container-fluid">
       <div class="body__content container">
         <div class="row text-light">
-          <div class="col-12 col-md-7">
+          <div class="col-md-12 col-lg-7">
             <div class="text__header">LOREM IPSUM SIT AMTE</div>
             <div class="text__detail mt-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -234,14 +248,14 @@
               <button class="btn__style"><a href="https://postipasti.it/merchantsignup">REGISTER</a></button>
             </div>
           </div>
-          <div class="col-12 col-md-5"></div>
+          <div class="col-lg-5"></div>
         </div>
       </div>
     </div>
     <div id="section2" class="container-fluid">
       <div class="body__content container">
         <div class="row text-light">
-          <div class="col-12 col-md-7">
+          <div class="col-md-12 col-lg-7">
             <div class="text__header">LOREM IPSUM SIT AMTE</div>
             <div class="text__detail mt-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -252,15 +266,13 @@
               <button class="btn__style"><a href="https://postipasti.it/merchantsignup">REGISTER</a></button>
             </div>
           </div>
-          <div class="col-12 col-md-5"></div>
+          <div class="col-lg-5"></div>
         </div>
-        <div class="social__icons"></div>
       </div>
-    </div>
-    <div id="section3" class="container-fluid">
+    </div><div id="section3" class="container-fluid">
       <div class="body__content container">
         <div class="row text-light">
-          <div class="col-12 col-md-7">
+          <div class="col-md-12 col-lg-7">
             <div class="text__header">LOREM IPSUM SIT AMTE</div>
             <div class="text__detail mt-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -271,15 +283,13 @@
               <button class="btn__style"><a href="https://postipasti.it/merchantsignup">REGISTER</a></button>
             </div>
           </div>
-          <div class="col-12 col-md-5"></div>
+          <div class="col-lg-5"></div>
         </div>
-        <div class="social__icons"></div>
       </div>
-    </div>
-    <div id="section4" class="container-fluid">
+    </div><div id="section4" class="container-fluid">
       <div class="body__content container">
         <div class="row text-light">
-          <div class="col-12 col-md-7">
+          <div class="col-md-12 col-lg-7">
             <div class="text__header">LOREM IPSUM SIT AMTE</div>
             <div class="text__detail mt-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -290,9 +300,8 @@
               <button class="btn__style"><a href="https://postipasti.it/merchantsignup">REGISTER</a></button>
             </div>
           </div>
-          <div class="col-12 col-md-5"></div>
+          <div class="col-lg-5"></div>
         </div>
-        <div class="social__icons"></div>
       </div>
     </div>
     <div class="footer">
