@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>qr</title>
 
@@ -78,7 +79,9 @@
       .navbar-nav .nav-item a {
         color: #a1ddde !important;
       }
-
+      .logo img {
+        width: 100px;
+      }
       @media screen and (min-width: 992px) {
         .navbar-nav .nav-item a:focus {
           color: #edffff !important;
@@ -88,19 +91,26 @@
           padding-top: 300px;
         }
       }
-      /* @media screen and (max-width: 990px) {
-        .body__content {
-          padding-top: 300px;
+      @media screen and (max-width: 992px) {
+        .navbar-nav {
+          text-align: right;
         }
-      } */
+        .navbar-nav .nav-item {
+          margin-right: 0 !important;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .logo__mobile {
+          display: none;
+        }
+      }
 
       @media screen and (max-width: 768px) {
         .body__content {
-          background-position-x: 89%;
-          background-position: right;
-        }
-        .body__content {
           padding-top: 107%;
+        }
+        .logo img {
+          width: 50px;
         }
       }
 
@@ -114,6 +124,12 @@
       }
 
       @media screen and (max-width: 500px) {
+        .logo__icon {
+          display: none;
+        }
+        .logo img {
+          width: 50px;
+        }
         .footer__logo img {
           width: 35%;
           margin-bottom: 10px;
@@ -151,6 +167,11 @@
         .footer__link {
           font-size: 12px;
           padding: 0 !important;
+        }
+      }
+      @media screen and (max-width: 375px) {
+        .text__detail {
+          line-height: 16px;
         }
       }
 
@@ -204,8 +225,11 @@
     </style>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top container mt-4">
-      <a class="navbar-brand logo" href="#"></a>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top container mt-lg-4">
+      <a class="navbar-brand logo" href="#">
+        <img class="logo__icon" src="./logo.png" alt="logo" />
+        <img class="logo__mobile" src="./mobile_logo.png" alt="logo" />
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -244,7 +268,7 @@
               eiusmod tempor incididunt ut labore et dolore magna aliauq.
             </div>
             <div class="btn__area mt-5">
-              <button class="btn__style mr-3"><a href="https://postipasti.it/merchantsignup">SIGN IN</a></button>
+              <button class="btn__style"><a href="https://postipasti.it/merchantsignup">SIGN IN</a></button>
               <button class="btn__style"><a href="https://postipasti.it/merchantsignup">REGISTER</a></button>
             </div>
           </div>
@@ -262,7 +286,7 @@
               eiusmod tempor incididunt ut labore et dolore magna aliauq.
             </div>
             <div class="btn__area mt-5">
-              <button class="btn__style mr-3"><a href="https://postipasti.it/merchantsignup">SIGN IN</a></button>
+              <button class="btn__style"><a href="https://postipasti.it/merchantsignup">SIGN IN</a></button>
               <button class="btn__style"><a href="https://postipasti.it/merchantsignup">REGISTER</a></button>
             </div>
           </div>
@@ -279,7 +303,7 @@
               eiusmod tempor incididunt ut labore et dolore magna aliauq.
             </div>
             <div class="btn__area mt-5">
-              <button class="btn__style mr-3"><a href="https://postipasti.it/merchantsignup">SIGN IN</a></button>
+              <button class="btn__style"><a href="https://postipasti.it/merchantsignup">SIGN IN</a></button>
               <button class="btn__style"><a href="https://postipasti.it/merchantsignup">REGISTER</a></button>
             </div>
           </div>
@@ -296,7 +320,7 @@
               eiusmod tempor incididunt ut labore et dolore magna aliauq.
             </div>
             <div class="btn__area mt-5">
-              <button class="btn__style mr-3"><a href="https://postipasti.it/merchantsignup">SIGN IN</a></button>
+              <button class="btn__style"><a href="https://postipasti.it/merchantsignup">SIGN IN</a></button>
               <button class="btn__style"><a href="https://postipasti.it/merchantsignup">REGISTER</a></button>
             </div>
           </div>

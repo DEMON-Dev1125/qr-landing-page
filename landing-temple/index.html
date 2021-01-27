@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>qr</title>
 
@@ -81,6 +82,21 @@
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: #616161;
     }
+    .logo img {
+      width: 100px;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .logo img {
+        width: 50px;
+      }
+    }
+    
+    @media screen and (min-width: 768px) {
+      .logo__mobile {
+        display: none;
+      }
+    }
     @media screen and (min-width: 992px) {
       .navbar-nav .nav-item a {
         color: #616161 !important;
@@ -97,6 +113,9 @@
       .search {
         display: none;
       }
+      .navbar-nav {
+        text-align: right;
+      }
     }
     @media screen and (max-width: 768px) {
       .text__content {
@@ -108,6 +127,12 @@
       }
     }
     @media screen and (max-width: 500px) {
+      .logo__icon {
+        display: none;
+      }
+      .logo img {
+        width: 50px;
+      }
       .btn__style {
         background: linear-gradient(to right, #5479b0 0%, #03cbc1 100%);
         font-size: 15px;
@@ -176,6 +201,11 @@
         padding: 0 !important;
       }
     }
+    @media screen and (max-width: 375px) {
+      .text__detail {
+        line-height: 15px;
+      }
+    }
 
     .fa {
       padding: 8px;
@@ -226,8 +256,11 @@
     }
   </style>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <a class="navbar-brand logo" href="#"> </a>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top container mt-lg-4">
+      <a class="navbar-brand logo" href="#">
+        <img class="logo__icon" src="./logo.png" alt="logo" />
+        <img class="logo__mobile" src="./mobile_logo.png" alt="logo" />
+      </a>
       <button
         class="navbar-toggler"
         type="button"
